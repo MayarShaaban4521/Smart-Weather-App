@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Amatic+SC:wght@400;700&family=Arima:wght@100..700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Bree+Serif&family=Bubblegum+Sans&family=Cairo:wght@200..1000&family=Cinzel:wght@400..900&family=Great+Vibes&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Poetsen+One&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-----------------------------------start header--------------------------------------->
+    <nav class="navbar navbar-expand-lg py-5 px-5">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand d-flex align-items-center justify-content-center"
+          href="#"
+        >
+          <img
+            src="https://routeweather.netlify.app/images/logo@2x.png"
+            alt=""
+            class="me-3"
+            width="64"
+            height="38"
+          />
+          <div class="head">
+            <span class="mainHead text-white m-0 p-0">Weather</span>
+            <br />
+            <small class="secondHead text-light p-0 m-0"
+              >tagline goes here</small
+            >
+          </div>
+        </a>
+        <button
+          class="navbar-toggler navbar-icon"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><i class="fa-solid fa-bars text-white"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav rounded">
+            <li class="nav-item text-center">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <hr class="text-bg-dark" />
+            <li class="nav-item text-center">
+              <a class="nav-link text-white" href="#">News</a>
+            </li>
+            <hr class="text-bg-dark" />
+            <li class="nav-item text-center">
+              <a class="nav-link text-white" href="#">Live Cameras</a>
+            </li>
+            <hr class="text-bg-dark" />
+            <li class="nav-item text-center">
+              <a class="nav-link text-white" href="#">Photos</a>
+            </li>
+            <hr class="text-bg-dark" />
+            <li class="nav-item text-center">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-----------------------------------end header----------------------------------->
+    <!-------------------------------start body------------------------------>
+    <div class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="find-location">
+            <form action="#" class="subscribe-form w-100">
+              <input
+                id="search"
+                class="search rounded-5"
+                type="text"
+                placeholder="Find Your Location..."
+              />
+              <input
+                class="btn btn-info rounded-5 text-white"
+                type="submit"
+                value="find"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="forecast-table">
+      <div class="container">
+        <div class="forecast-container" id="forecast">
+          <div class="today forecast">
+            <div class="forecast-header" id="today">
+              <div class="day">Tuesday</div>
+              <div class="date">24June</div>
+            </div>
+            <!-- .forecast-header -->
+            <div class="forecast-content" id="current">
+              <div class="location">Cairo</div>
+              <div class="degree">
+                <div class="num">34<sup>o</sup>C</div>
+
+                <div class="forecast-icon">
+                  <img
+                    src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+                    alt=""
+                    width="90"
+                  />
+                </div>
+              </div>
+              <div class="custom">Sunny</div>
+              <span
+                ><img
+                  src="https://routeweather.netlify.app/images/icon-umberella@2x.png"
+                  alt=""
+                  width="21"
+                  height="21"
+                />20%</span
+              >
+              <span
+                ><img
+                  src="https://routeweather.netlify.app/images/icon-wind@2x.png"
+                  alt=""
+                  width="23"
+                  height="21"
+                />18km/h</span
+              >
+              <span
+                ><img
+                  src="https://routeweather.netlify.app/images/icon-compass@2x.png"
+                  alt=""
+                  width="21"
+                  height="21"
+                />East</span
+              >
+            </div>
+          </div>
+          <div class="forecast">
+            <div class="forecast-header">
+              <div class="day">Wednesday</div>
+            </div>
+            <!-- .forecast-header -->
+            <div class="forecast-content">
+              <div class="forecast-icon">
+                <img
+                  src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+                  alt=""
+                  width="48"
+                />
+              </div>
+              <div class="degree">37.8<sup>o</sup>C</div>
+              <small>23.3<sup>o</sup></small>
+              <div class="custom">Sunny</div>
+            </div>
+          </div>
+          <div class="forecast">
+            <div class="forecast-header">
+              <div class="day">Thursday</div>
+            </div>
+            <!-- .forecast-header -->
+            <div class="forecast-content">
+              <div class="forecast-icon">
+                <img
+                  src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+                  alt=""
+                  width="48"
+                />
+              </div>
+              <div class="degree">37.6<sup>o</sup>C</div>
+              <small>23.2<sup>o</sup></small>
+              <div class="custom">Sunny</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------------end body------------------------------>
+    <!---------------------------start footer------------------------------>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-md-8">
+            <form action="#" class="subscribe-form w-100">
+              <input
+                class="rounded-5"
+                type="text"
+                placeholder="Enter your email to subscribe..."
+              />
+              <input
+                class="btn btn-info rounded-5"
+                type="submit"
+                value="Subscribe"
+              />
+            </form>
+          </div>
+          <div class="col-md-4">
+            <div class="social-links mb-4">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-white">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+    <!-----------------------------------end footer--------------------------------->
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
